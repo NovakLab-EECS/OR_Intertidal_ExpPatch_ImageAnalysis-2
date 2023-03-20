@@ -82,3 +82,5 @@ The first is the way that we labeled most of our bounding boxes, which is using 
 The second way to create bounding boxes requires semi-supervised learning, where we give YOLO our current data set, and have it give us bounding boxes that it has predicted to add to our training set. With this approach, a script can be written to display these bounding boxes, then confirm or deny if the bounding box is accurate. This would expedite the process of adding training data, and is much less time consuming. 
   
 We have a small subset of our total training data labeled with bounding boxes and the rest of the training data having x y coordinates for labels. We had a couple of ideas for adding more bounding boxes. The first would be to manually add more, but this is very time intensive. Another method would be to use a ‘semi-supervised’ algorithm to add more bounding boxes. We are doing this by running inference on the training data without bounding boxes, then using the x y coordinates present in the training data and checking if a point is in a bounding box and if it is and it is the same type, then add it to the training data.
+
+CB- Test
