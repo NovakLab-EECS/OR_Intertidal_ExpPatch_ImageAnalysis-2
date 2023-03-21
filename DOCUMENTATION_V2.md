@@ -111,6 +111,7 @@ b. Optimize the model architecture by adjusting parameters such as the number of
 c. Incorporate techniques like batch normalization, dropout, and skip connections to improve model performance and reduce overfitting.
 
 ## Model Training:
+
 a. Split the pre-processed and augmented dataset into training, validation, and testing sets.
 b. Train the model using a suitable optimization algorithm (e.g., Adam, RMSprop) and loss function (e.g., cross-entropy loss, IoU loss).
 c. Monitor the model's performance using metrics like mean average precision (mAP) and Intersection over Union (IoU) on the validation set during training.
