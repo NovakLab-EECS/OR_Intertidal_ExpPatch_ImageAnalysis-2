@@ -73,7 +73,7 @@ From the model runs we ran, we found the optimal parameters to be 10 layers for 
 
 
 # Data Analysis
-As this is an object detection project, the main purpose in analyzing our data is to determine the frequencies of the interested species, and how these species were distributed and varied amongst different patches and across surveys. We hope that the knowledge of these approximate distributions can help make accurate and less biased models. The analysis and images below can be found in this [directory].
+As this is an object detection project, the main purpose in analyzing our data is to determine the frequencies of the interested species, and how these species were distributed and varied amongst different patches and across surveys. We hope that the knowledge of these approximate distributions can help make accurate and less biased models. The analysis and images below can be found in the [data analysis directory](https://github.com/NovakLab-EECS/OR_Intertidal_ExpPatch_ImageAnalysis-2/tree/master/data_analysis).
 
 
 ## Total Counts of Species
@@ -100,6 +100,7 @@ Heatmap symbol table:
 |  > |  1000 <= counts < 5000|
 |  ^ |  5000 <= counts < 10000|
 |  . |  10000 <= counts 20000 |
+
 We can see that a majority of the types are 0 throughout, very few types had a lot of counts, and the largest counts occurred in later surveys. If images were chosen selectively for their counts, this could mean that more images from the later surveys would be left out as they can increase the counts by a large factor. 
 
 ## Patches Across Surveys
