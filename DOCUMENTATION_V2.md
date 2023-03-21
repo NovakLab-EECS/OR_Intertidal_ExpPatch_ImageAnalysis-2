@@ -94,16 +94,16 @@ We replaced the previous teams YOLO approach with the P2BNet approach to benefit
 As part of our efforts to improve the performance of our object detection model, Our team has layed out a process for model refinement and data augmentation. This plan outlines the steps we will undertake to ensure our model is more accurate and robust in detecting objects within various environments.
 
 ## Data Augmentation:
-   a. Implement various augmentation techniques to increase the diversity and size of our dataset, such as:
-       - Horizontal and vertical flipping
-       - Rotation
-       - Scaling and resizing
-       - Shearing and skewing
-       - Random cropping
-       - Brightness and contrast adjustments
-       - Noise injection
-   b. Apply these augmentations in a balanced manner to avoid overfitting and ensure the model generalizes well to new, unseen data.
-   c. Use a data augmentation library like Albumentations, imgaug, or build custom augmentation functions to streamline the process.
+  a. Implement various augmentation techniques to increase the diversity and size of our dataset, such as:
+    - Horizontal and vertical flipping
+    - Rotation
+    - Scaling and resizing
+    - Shearing and skewing
+    - Random cropping
+    - Brightness and contrast adjustments
+    - Noise injection
+  b. Apply these augmentations in a balanced manner to avoid overfitting and ensure the model generalizes well to new, unseen data.
+  c. Use a data augmentation library like Albumentations, imgaug, or build custom augmentation functions to streamline the process.
 
 ## Model Selection and Architecture Refinement:
 a. Choose a suitable baseline model, such as YOLO, Faster R-CNN, or SSD, that has demonstrated strong performance alongside P2BNet.
