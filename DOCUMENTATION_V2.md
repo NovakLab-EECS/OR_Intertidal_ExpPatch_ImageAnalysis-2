@@ -89,7 +89,8 @@ We noticed the large amount of species types 1 and 11 for both runs, this is use
 
 If it becomes necessary to have more uniform counts for each type across surveys, we need to be able to determine the counts at each survey and patches. Here we look at the total counts for each type for a given survey across all surveys, ignoring cropped images. 
 ![NC_TypeCountsEachSurvery](data_analysis/analysis_images/NC_TypeCountsEachSurvery.png)
-Heatmap symbol table:
+
+#### Heatmap symbol table
 | Symbol  |  Counts |
 |:---:|:---:|
 |  0 |  counts = 50 |
