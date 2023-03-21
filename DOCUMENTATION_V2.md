@@ -96,14 +96,14 @@ As part of our efforts to improve the performance of our object detection model,
 ## Data Augmentation:
 a. Implement various augmentation techniques to increase the diversity and size of our dataset, such as:
   1. Horizontal and vertical flipping
-    2. Rotation
-    Scaling and resizing
-    + Shearing and skewing
-    + Random cropping
-    + Brightness and contrast adjustments
-    + Noise injection
-  b. Apply these augmentations in a balanced manner to avoid overfitting and ensure the model generalizes well to new, unseen data.
-  c. Use a data augmentation library like Albumentations, imgaug, or build custom augmentation functions to streamline the process.
+  2. Rotation
+  3. Scaling and resizing
+  4. Shearing and skewing
+  5. Random cropping
+  6. Brightness and contrast adjustments
+  7. Noise injection
+b. Apply these augmentations in a balanced manner to avoid overfitting and ensure the model generalizes well to new, unseen data.
+c. Use a data augmentation library like Albumentations, imgaug, or build custom augmentation functions to streamline the process.
 
 ## Model Selection and Architecture Refinement:
 a. Choose a suitable baseline model, such as YOLO, Faster R-CNN, or SSD, that has demonstrated strong performance alongside P2BNet.
