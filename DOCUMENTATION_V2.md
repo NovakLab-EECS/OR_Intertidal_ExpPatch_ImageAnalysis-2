@@ -91,3 +91,38 @@ Finally, P2BNet uses a post-processing step to merge overlapping box predictions
 We replaced the previous teams YOLO approach with the P2BNet approach to benefit from its box-based prediction task, which we believe will provide better results for our specific problem of species identification in images.
 
 # Model Refinement
+As part of our efforts to improve the performance of our object detection model, Our team has layed out a process for model refinement and data augmentation. This plan outlines the steps we will undertake to ensure our model is more accurate and robust in detecting objects within various environments.
+
+Data Augmentation:
+a. Implement various augmentation techniques to increase the diversity and size of our dataset, such as:
+    - Horizontal and vertical flipping
+    - Rotation
+    - Scaling and resizing
+    - Shearing and skewing
+    - Random cropping
+    - Brightness and contrast adjustments
+    - Noise injection
+b. Apply these augmentations in a balanced manner to avoid overfitting and ensure the model generalizes well to new, unseen data.
+c. Use a data augmentation library like Albumentations, imgaug, or build custom augmentation functions to streamline the process.
+
+Model Selection and Architecture Refinement:
+a. Choose a suitable baseline model, such as YOLO, Faster R-CNN, or SSD, that has demonstrated strong performance alongside P2BNet.
+b. Optimize the model architecture by adjusting parameters such as the number of layers, filter sizes, and activation functions.
+c. Incorporate techniques like batch normalization, dropout, and skip connections to improve model performance and reduce overfitting.
+
+Model Training:
+a. Split the pre-processed and augmented dataset into training, validation, and testing sets.
+b. Train the model using a suitable optimization algorithm (e.g., Adam, RMSprop) and loss function (e.g., cross-entropy loss, IoU loss).
+c. Monitor the model's performance using metrics like mean average precision (mAP) and Intersection over Union (IoU) on the validation set during training.
+d. Employ techniques like early stopping, learning rate scheduling, and model checkpointing to prevent overfitting and ensure the most accurate model is saved.
+
+Model Evaluation and Hyperparameter Tuning:
+a. Evaluate the trained model's performance on the test set to obtain an unbiased estimate of its accuracy and generalization ability.
+b. Perform hyperparameter tuning using techniques like grid search, random search, or Bayesian optimization to further optimize the model's performance.
+c. Re-train and evaluate the model with the optimal set of hyperparameters to maximize its object detection capabilities.
+
+Model Deployment and Continuous Improvement:
+a. Deploy the refined object detection model on the remaining un-annotated Serial Image Analysis data.
+b. Monitor the model's performance on remaining serial image analysis data and gather feedback from project partner (Mark Novak) to identify areas for improvement.
+
+By following this plan, we will be able to develop a more accurate and robust object detection model that can effectively detect and classify objects in a wide variety of scenarios. 
