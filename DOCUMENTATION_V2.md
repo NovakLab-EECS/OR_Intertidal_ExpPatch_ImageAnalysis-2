@@ -94,10 +94,10 @@ We replaced the previous teams YOLO approach with the P2BNet approach to benefit
 As part of our efforts to improve the performance of our object detection model, Our team has layed out a process for model refinement and data augmentation. This plan outlines the steps we will undertake to ensure our model is more accurate and robust in detecting objects within various environments.
 
 ## Data Augmentation:
-  a. Implement various augmentation techniques to increase the diversity and size of our dataset, such as:
-    + Horizontal and vertical flipping
-    + Rotation
-    + Scaling and resizing
+a. Implement various augmentation techniques to increase the diversity and size of our dataset, such as:
+  1. Horizontal and vertical flipping
+    2. Rotation
+    Scaling and resizing
     + Shearing and skewing
     + Random cropping
     + Brightness and contrast adjustments
