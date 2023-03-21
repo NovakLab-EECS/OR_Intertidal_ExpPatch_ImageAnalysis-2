@@ -102,6 +102,7 @@ a. Implement various augmentation techniques to increase the diversity and size 
   5. Random cropping
   6. Brightness and contrast adjustments
   7. Noise injection
+
 b. Apply these augmentations in a balanced manner to avoid overfitting and ensure the model generalizes well to new, unseen data.
 c. Use a data augmentation library like Albumentations, imgaug, or build custom augmentation functions to streamline the process.
 
