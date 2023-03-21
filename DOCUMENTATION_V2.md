@@ -73,7 +73,41 @@ From the model runs we ran, we found the optimal parameters to be 10 layers for 
 
 
 # Data Analysis
-  
+As this is an object detection project, the main purpose in analyzing our data is to determine the frequencies of the interested species, and how these species were distributed and varied amongst different patches and across surveys. We hope that the knowledge of these approximate distributions can help make accurate and less biased models. The analysis and images below can be found in this [directory].
+
+
+## Total Counts of Species
+By going through all directories and patches, we were able to sum up the total counts for each species. We did this twice, once including cropped and uncropped images, and another time only including uncropped images.
+![CNC_totalcounts](data_analysis/analysis_images/CNC_totalcounts.png)
+![NC_totalcounts](data_analysis/analysis_images/NC_totalcounts.png)
+![CNC_totalcounts_logged](data_analysis/analysis_images/CNC_totalcounts_logged.png)
+![CNC_totalcounts_logged](data_analysis/analysis_images/CNC_totalcounts_logged.png)
+
+We noticed the large amount of species types 1 and 11 for both runs, this is useful as they are in the set of interested species, however, it is possible that these can start biasing model predictions to those types, as they are the most abundant. We are also hesitant to include the cropped data into our model, as this increases the total abundance of types 1 and 11, without increasing the other species by much, and thus, might not provide a significant benefit in increasing the accuracy of our model.
+
+## Types Distributed Amongst Surveys
+
+If it becomes necessary to have more uniform counts for each type across surveys, we need to be able to determine the counts at each survey and patches. Here we look at the total counts for each type for a given survey across all surveys, ignoring cropped images. 
+![NC_TypeCountsEachSurvery](data_analysis/analysis_images/NC_TypeCountsEachSurvery.png)
+Heatmap symbol table:
+| Symbol  |  Counts |
+|:---:|:---:|
+|  0 |  counts = 50 |
+|  - |  counts < 50 |
+|  * |  50 <= counts <   100|
+|  = |  100 <= counts <  500|
+|  < |  500 <= counts <  1000|
+|  > |  1000 <= counts < 5000|
+|  ^ |  5000 <= counts < 10000|
+|  . |  10000 <= counts 20000 |
+We can see that a majority of the types are 0 throughout, very few types had a lot of counts, and the largest counts occurred in later surveys. If images were chosen selectively for their counts, this could mean that more images from the later surveys would be left out as they can increase the counts by a large factor. 
+
+## Patches Across Surveys
+Finally, we examined how the counts for each patch varied across surveys. We did this for both cropped and uncropped data. Cropped patches can be determined by the suffix “_c”, in the patch name. 
+![CNC_patchesacross_Survey](data_analysis/analysis_images/CNC_patchesacross_Survey.png)
+![CNC_nonnullPatchAcrossSurvey](data_analysis/analysis_images/CNC_nonnullPatchAcrossSurvey.png)
+Through this analysis, it's abundantly clear that we have a lot of discontinued patches. This makes sense as our project partner initially intended on counting all patches, but this became too time consuming. We also noted that a lot of the cropped data had jagged time limes. By only including non-null patches and ignoring survery’s 0 and 1, we can see how total counts for species changes over time. This may be useful when analyzing our data serially.
+
 # P2B Approach
 
 P2BNet is a novel object detection model that was introduced in the paper "P2BNet: Point-to-Box Network for Object Detection" by Zhiqiang Shen, Jiaxiong Qiu, Weiming Dong, and Nong Sang. The main idea behind P2BNet is to convert the problem of object detection from a point-based prediction task to a box-based prediction task.
