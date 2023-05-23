@@ -129,6 +129,9 @@ Finally, P2BNet uses a post-processing step to merge overlapping box predictions
 
 We replaced the previous teams YOLO approach with the P2BNet approach to benefit from its box-based prediction task, which we believe will provide better results for our specific problem of species identification in images.
 
+Our P2BNet implementation can be found in the `P2BNet_Setup` directory along with instructions on how to run P2BNet
+with the OR_ExPatch dataset: [README.md](P2BNet_Setup/OR_ExpPatch_to_P2BNet/README.md)
+
 # Model Refinement
 As part of our efforts to improve the performance of our object detection model, Our team has layed out a process for model refinement and data augmentation. This plan outlines the steps we will undertake to ensure our model is more accurate and robust in detecting objects within various environments.
 
