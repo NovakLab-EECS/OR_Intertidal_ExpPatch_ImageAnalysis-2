@@ -1,4 +1,7 @@
 # [EECS Project](https://eecs.oregonstate.edu/capstone/submission/pages/viewSingleProject.php?id=XsGFkIR7OR5RqvfA): Serial image analysis to infer spatially-explicit species dynamics
+
+##Project Implementation Documentation can be found here: [DOCUMENTATION.MD](DOCUMENTATION_V2.md)
+
 Develop, train, and implement new or off-the-shelf image recognition algorithms to identify and enumerate species in a large collection of fixed-location photographs that were taken repeatedly (on a monthly basis) over three years in a unique experiment of ecological succession.
 
 ## Objectives
