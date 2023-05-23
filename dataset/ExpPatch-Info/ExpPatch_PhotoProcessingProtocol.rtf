@@ -1,0 +1,95 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fswiss\fcharset0 Helvetica;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 6.3.9600}\viewkind4\uc1 
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\f0\fs24\lang9 Experimental Patch Pictures: Downloading and Analysis Protocol\par
+Last updated: 2014-09-19 (by MN)\par
+\par
+~~~~~~~~~~~Connecting to the server~~~~~~~~~~\par
+You can access our shared folder on server (a.k.a T-drive) using your SCIENCE account from any machine on campus, or from off-campus if you have a VPN running.\par
+\par
+To connect to (mount) the server, either:\par
+\tab 1.  Go to the applications and click on the COSINE application.  It will ask you for a password.  Make sure to use your .science account username.\par
+\tab or\par
+\tab 2. On a mac, select "Connect to Server" from the Finder>Go drop down menu and type in:\par
+\tab\tab smb://username@storage.science.oregonstate.edu/Zoology/NovakLab/\par
+\tab ...where username is your science username.  It should then ask for your password.\par
+\par
+You should now be able to access the NovakLab folder within the Zoology folder.\par
+\par
+\par
+\par
+~~~~~~~~~~~Offloading images from the camera to the server~~~~~~~~~~\par
+1. Login to the server and locate (or create) the folder into which you want to move the new pictures from the camera.\par
+For example,\par
+\'85/Data/OR_Intertidal/ExperimentalPatches/ExpPatch-Pics/ExpPatchPics-NeedProcessing/2013_MONTH_DAY_Survey##_NP\par
+\par
+2. Connect the camera to the USB port.  The icon for the NOVAKLAB flashdrive will appear on the desktop. (If it doesn't, on a mac, go to Finder>Preferences and select the 'External drives' checkbox.)  \par
+\par
+3. Open the flash drive and COPY (don't move) the relevant images into the server folder. (Note:  There will be images from older surveys on the drive too, so be sure to only copy out the ones that are relevant.  If you notice the flash drive filling up, make sure the previous surveys have already been placed on the server before deleting them off the flash drive.)\par
+\par
+4. Now go through each image and rename its filename according to the filename conventions (see txt file in "ExpPatch-Info" folder).  You can either do this manually, or use the Exifrenamer app (which requires a bit of practice, but speeds things up tremendously.)\par
+\par
+~~~~~~~~~~~Creating cropped versions~~~~~~~~~~~~~~\par
+1.  Cropped version should be created immediately after the original files have been renamed.\par
+\par
+2. There is an AppleScript application to use for creating cropped images.  It is located in the \ldblquote ExpPatch-Pics\rdblquote  folder, and will only work on an Apple computer (not in Windows).  Use \ldblquote ExpPatch_BatchImageCrop.app\rdblquote  to crop all the images of a survey.  The app will prompt you to specify the folder and will then run in the background to create a \ldblquote cropped\rdblquote  folder.  This will take a while, and you\rquote ll have to check to ensure all images have in fact been cropped by looking at the total number of files in the new folder.  After it has cropped the pictures, it will rename the new files by appending a \ldblquote _c.jpg\rdblquote  to the name.\par
+\par
+\par
+~~~~~~~~~~~Analyzing Pictures~~~~~~~~~~~~\par
+1. Select a (cropped) picture and COPY it to your desktop.  This is your working copy.\par
+\par
+2.  Note that each survey folder has a subfolder titled \lquote Cropped\rquote .  In this folder there are copies of each quadrat photo cropped to show a 10x10 cm area.  \par
+This cropped photo is to be used to count acorn barnacles and mussels.  All other species should be counted in the full photo.  (If acorn barnacles or mussels are scarce in the full photo, count them in the full photo rather than the cropped photo.)  Be sure to copy this cropped photo to your desktop in addition to the full photo. \par
+\par
+3. Rename the original picture file (and the cropped picture file) on the server by adding the suffix "\'85-IP.jpeg" (for \ldblquote in progress\rdblquote ) to the file name.  (This is to ensure that no one else works on the same picture.)\par
+\par
+4.  Open ImageJ and open the picture from the desktop (File>Open, or drag the image onto the ImageJ icon in the dock.)\par
+\par
+5. Go to "Plugins>Analyze>Cell Counter" (or "Plugins>Cell counter" if you've already used it once before). [If ImageJ tells you Cell Counter has been replaced with the Multi-Point tool, download Cell Counter seperately and move the program to ImageJ's analyze folder (ImageJ>plugins>Analyze).]\par
+\par
+6.  Click "Initialize" and deselect the "Show Numbers" checkbox.\par
+\par
+7.  Add additional Types, as needed, by clicking "Add".  Type numbers are standardized as described in the file:  \ldblquote ExpPatch-SpeciesTypesIDs.txt\rquote\par
+\par
+You can ignore:\par
+\tab Amphipods, isopods,\'85\par
+\par
+*************Special Note for Algae******************\par
+Because it is not possible to count individuals of algae/diatoms, estimate their percent cover instead.  Do this by looking at the (non-cropped) photo and approximate the percent of the photo that is covered in algae.  This does not need to be an exact percentage but should be a good estimate.  Record this estimate in the appropriate column of the \lquote Photo_Counts_Notes\rquote  google doc file. If there are no algae in the photo, put a zero in the percent cover of algae column of the \lquote Photo_Counts_Notes\rquote  sheet.\par
+\par
+The link to the Google file is:  \par
+{{\field{\*\fldinst{HYPERLINK https://docs.google.com/spreadsheets/d/1BWpBvagR6X-Qo8gHF7YrqhImVRb-bwtQ1LQPNgXA4Js/edit?usp=sharing }}{\fldrslt{https://docs.google.com/spreadsheets/d/1BWpBvagR6X-Qo8gHF7YrqhImVRb-bwtQ1LQPNgXA4Js/edit?usp=sharing\ul0\cf0}}}}\f0\fs24\par
+\par
+8.  Take an overview look at the picture to get a sense of the rare vs. common species. If mussel or acorn barnacle densities are high count them in the cropped photo as opposed to the whole photo.  Indicate whether or not you count mussels in the cropped photo in the \lquote Photo_Counts_Notes\rquote  excel sheet in the appropriate column.\par
+\par
+9. If the photo (cropped version) has a uniform acorn barnacle sheet covering it (i.e. there are a ton of barnacles but they\rquote re all uniformly distributed), you need only to count the left half of the photo.  To obtain exactly half of the picture for counting, use the pixel number in the upper corner of the image and the zoom tool in ImageJ.  Make note of whether or not you used all of, or only half of the cropped photo in the \ldblquote Photo_Counts_Notes\rdblquote  excel sheet in the experimental patches folder on the server.    You do not need to adjust the count.  An R-script will do this automatically.\par
+\par
+10. From the drown down menu select "Image>Zoom>View 100%"\par
+\par
+11. Go through the picture and mark each species according to its designated counter type, the cell counter will keep track of the frequencies for you.  NOTE:  Start with the rarer species the first time through so as not to miss them later after the picture fills ups with dots.  (The order of species to pick will change over time depending on when the picture was taken as the relative species composition will change).\par
+\par
+12.  Go through the picture a second time counting the common species (during the process, you will likely find rare species you missed the first time around).\par
+\par
+13. Go through the picture a third time to find anything that you may have missed.  (Don't kill yourself spending tons of time trying to find every single individual. That is both nearly impossible and overly time consuming).\par
+\par
+14.  When finished (either for the time being or completely), click "Save Markers" to save an xml file (leave the name unchanged) to the desktop.  This saves a file of xy coordinates for the markers. This can be re-loaded into ImageJ onto the picture if you have stopped counting part way through an analysis (using "Load Markers\rdblquote ).  \par
+\par
+Note:  if you are unable to re-open the markers, make sure the file names haven\rquote t changed:  \par
+When you first save the markers on ImageJ it embeds the name of the picture file into the counter file. However, if you try to change the name of either the counter file or the image file later (just renaming the file), even though they appear to match, what is embedded is not changed just by changing the file name. The way to fix this is to open the counter file with\par
+a text editor, like notepad or textedit on mac and change the file name so that it matches exactly. Just do markers on a new image and open those marker files with text edit to compare. You will likely see that the embedded file name of the one that is not working is different from what the file is named on your computer when you see the file in finder. Bottom line, when you first save the markers the xml file name you will see is "Cell Counter_picture file name.xml" but if you ever change it or change the picture file name they will not match.\par
+\par
+15.  When completely finished, Click "Results".  A data frame type frequencies will pop up. Click "File>Save As" and give the excel (XLS) file the same name as the picture and save it to the desktop.\par
+\par
+16. COPY the three files (the picture, the xml file, and the excel file) from the desktop to their appropriate surveys folders on the server in the "ExpPatchPics-Processed" folder.\par
+\par
+17. After you've successfully copied the three files to the server, delete them from the desktop.\par
+\par
+18. Delete the original "\'85-IP.jpg" picture from the "\'85.-Need_Processing" folder.\par
+\par
+19.  Take a break, pat yourself on the back, and repeat!\par
+\par
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\par
+We have written an R script that pulls the data out of each Excel file and puts them into one place.\par
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\par
+}
+ 

@@ -1,0 +1,22 @@
+Naming protocol for Experimental Mussel Patch Quadrat Pictures
+
+
+There are 2 ypes of pictures:
+
+1.  Overview picture of the patch. (Differentiated by A-G, AB-AG, BA-BF).
+	Note: Patches are labelled by the bolt and washer placed at the top left corner of each quadrat.
+		Filename: Year-Month-Day_Site_Patch.jpg
+		Example: 2013-06-26_YB-A.jpg
+	When multiple overview pictures have been taken, chose the “best” one. (Do not use lowercase  letter to differentiate as before.)
+
+
+
+2.  Detailed quadrat pictures. (Differentiated by q1-q9).
+		Filename: Year-Month-Day_Site_Patch#qQuadrat.jpg
+		Example: 2013-06-26_YB-Aq1.jpg;
+	When multiple pictures have been taken, chose the “best” one. (Do not use lowercase  letter to differentiate as before.)
+
+Special Note: When labeling the Cropped Photos, put a “_c” at the end of the name right before the ‘.jpg’.  This step can be automated on a Mac using the “ExpPatch_BatchImageCrop.app” AppleScript.
+
+
+
